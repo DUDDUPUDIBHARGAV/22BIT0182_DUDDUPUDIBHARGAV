@@ -1,0 +1,62 @@
+Microsoft Windows [Version10.0.26200.8524]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Bhargav>cd \
+
+C:\>D:
+
+D:\>cd MongoDB
+
+D:\MongoDB>mkdir db0
+
+D:\MongoDB>mkdir db1
+
+D:\MongoDB>mkdir db2
+
+D:\MongoDB>
+
+
+
+Microsoft Windows [Version 10.0.26200.8524]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Bhargav>cd \
+
+C:\>D:
+
+D:\>cd MongoDB
+
+D:\MongoDB>cd db0
+
+D:\MongoDB\db0>"C:\Program Files\MongoDB\Server\8.3\bin\mongod.exe" --replSet myReplSet --dbpath D:\MongoDB\db0 --port 27017 --bind_ip localhost
+{"t":{"$date":"2026-06-09T19:48:33.442+05:30"},"s":"I",  "c":"-",      "id":8991200, "ctx":"thread1","msg":"Shuffling initializers","attr":{"seed":1145186765}}
+{"t":{"$date":"2026-06-09T19:48:33.465+05:30"},"s":"I",  "c":"CONTROL",  "id":97374,   "ctx":"thread1","msg":"Automatically disabling TLS 1.0 and TLS 1.1, to force-enable TLS 1.1 specify --sslDisabledProtocols 'TLS1_0'; to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2026-06-09T19:48:33.526+05:30"},"s":"I",  "c":"CONTROL",  "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"AuthorizationRouter","numThreads":0,"minThreads":0,"maxThreads":1000000000}}
+{"t":{"$date":"2026-06-09T19:48:33.526+05:30"},"s":"I",  "c":"EXECUTOR", "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"ThreadPool","numThreads":0,"minThreads":0,"maxThreads":1}}
+{"t":{"$date":"2026-06-09T19:48:33.540+05:30"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"thread1","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":28},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":28},"outgoing":{"minWireVersion":6,"maxWireVersion":28},"isInternalClient":true}}}
+{"t":{"$date":"2026-06-09T19:48:33.546+05:30"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"thread1","msg":"Multi threading initialized"}
+{"t":{"$date":"2026-06-09T19:48:33.553+05:30"},"s":"I",  "c":"EXECUTOR", "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"ReadWriteConcernDefaults","numThreads":0,"minThreads":0,"maxThreads":1}}
+{"t":{"$date":"2026-06-09T19:48:33.553+05:30"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":31960,"port":27017,"dbPath":"D:/MongoDB/db0","architecture":"64-bit","host":"DESKTOP-SEB05F5"}}
+{"t":{"$date":"2026-06-09T19:48:33.559+05:30"},"s":"I",  "c":"CONTROL",  "id":23398,   "ctx":"initandlisten","msg":"Target operating system minimum version","attr":{"targetMinOS":"Windows 7/Windows Server 2008 R2"}}
+{"t":{"$date":"2026-06-09T19:48:33.563+05:30"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"8.3.2","gitVersion":"89f54eb32e217d2f7bfcad50e5919f3033bb9611","modules":[],"allocator":"tcmalloc-gperf","environment":{"distmod":"windows","distarch":"amd64","target_arch":"amd64"}}}}
+{"t":{"$date":"2026-06-09T19:48:33.563+05:30"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Microsoft Windows Workstation (build 26200)","version":"10.0 (build 26200)"}}}
+{"t":{"$date":"2026-06-09T19:48:33.564+05:30"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"localhost","port":27017},"replication":{"replSet":"myReplSet"},"storage":{"dbPath":"D:\\MongoDB\\db0"}}}}
+{"t":{"$date":"2026-06-09T19:48:33.564+05:30"},"s":"I",  "c":"CONTROL",  "id":11280000,"ctx":"initandlisten","msg":"Starting thread pool","attr":{"poolName":"OCSPManagerHTTP","numThreads":0,"minThreads":1,"maxThreads":10}}
+{"t":{"$date":"2026-06-09T19:48:33.573+05:30"},"s":"W",  "c":"NETWORK",  "id":11621101,"ctx":"initandlisten","msg":"Overriding max connections to honor 'capMemoryConsumptionForPreAuthBuffers' settings","attr":{"limit":205679}}
+{"t":{"$date":"2026-06-09T19:48:33.574+05:30"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"initandlisten","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set at least one of the related parameters","attr":{"relatedParameters":["tcpFastOpenServer","tcpFastOpenClient","tcpFastOpenQueueSize"]}}
+
+
+
+{"t":{"$date":"2026-06-09T19:48:33.583+05:30"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=7522M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,remove=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=2000),statistics_log=(wait=0),json_output=(error,message),verbose=[recovery_progress:1,checkpoint_progress:1,compact_progress:1,live_restore_progress:1,backup:0,checkpoint:0,compact:0,disaggregated_storage:0,eviction:0,fileops:0,history_store:0,live_restore:0,recovery:0,rts:0,salvage:0,tiered:0,timestamp:0,transaction:0,verify:0,log:0],prefetch=(available=true,default=false)"}}
+{"t":{"$date":"2026-06-09T19:48:33.587+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":586344,"thread":"31960:140710016943648","session_name":"wiredtiger_open","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"opening the WiredTiger library"}}}
+{"t":{"$date":"2026-06-09T19:48:33.607+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":607346,"thread":"31960:140710016943648","session_name":"connection","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"connection configuration string parsing completed"}}}
+{"t":{"$date":"2026-06-09T19:48:33.613+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":613233,"thread":"31960:140710016943648","session_name":"connection","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"starting WiredTiger utility threads"}}}
+{"t":{"$date":"2026-06-09T19:48:33.631+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":631105,"thread":"31960:140710016943648","session_name":"connection","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"starting WiredTiger recovery"}}}
+{"t":{"$date":"2026-06-09T19:48:33.632+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":632127,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"scanning metadata to remove all incomplete tables"}}}
+{"t":{"$date":"2026-06-09T19:48:33.632+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":632127,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"scanning metadata to find the largest file ID"}}}
+{"t":{"$date":"2026-06-09T19:48:33.632+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":632127,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"largest file ID found in the metadata 0"}}}
+{"t":{"$date":"2026-06-09T19:48:33.632+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":632127,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY","log_id":1000000,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"recovery log replay has successfully finished and ran for 1 milliseconds"}}}
+{"t":{"$date":"2026-06-09T19:48:33.632+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":632127,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","log_id":1000000,"category_id":35,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Set global recovery timestamp: (0, 0)"}}}
+{"t":{"$date":"2026-06-09T19:48:33.633+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":633127,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY_PROGRESS","log_id":1000000,"category_id":35,"verbose_level":"DEBUG_1","verbose_level_id":1,"msg":"Set global oldest timestamp: (0, 0)"}}}
+{"t":{"$date":"2026-06-09T19:48:33.633+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":633114,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY","log_id":1493201,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"recovery was completed successfully and took 2ms, including 1ms for the log replay, 0ms for the rollback to stable, and 0ms for the checkpoint."}}}
+{"t":{"$date":"2026-06-09T19:48:33.633+05:30"},"s":"I",  "c":"WTRECOV",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":{"ts_sec":1781014713,"ts_usec":633114,"thread":"31960:140710016943648","session_name":"txn-recover","category":"WT_VERB_RECOVERY","log_id":1493201,"category_id":34,"verbose_level":"INFO","verbose_level_id":0,"msg":"recovery was completed successfully and took 2ms, including 1ms for the log replay, 0ms for the rollback to stable, and 0ms for the checkpoint."}}}
